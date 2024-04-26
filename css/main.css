@@ -10,9 +10,11 @@ header {
     color: white;
     height: 80px;
     margin: 10px;
+}
 
-
-
+img {
+    width: 4vw;
+    height: auto;
 }
 
 .nav {
