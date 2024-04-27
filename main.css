@@ -25,7 +25,7 @@ img {
 }
 
 .nav {
-    background-color: rgb(98, 97, 97);
+
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -53,4 +53,57 @@ footer {
     color: white;
     font-size: 1.5vw;
     text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5em;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(./imagenes/Cataratas-del-Iguazú.jpg);
+    background-size: cover;
+    font-size: x-large;
+    text-align: center;
+    color: aliceblue;
+    height: 6vw;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    background-image: url(./imagenes/Cerro-de-los-Siete-Colores.jpg);
+    background-size: cover;
+}
+
+.item3 {
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item4 {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item5 {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item6 {
+    background-image: url(./imagenes/hornocal1jpg.webp);
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
