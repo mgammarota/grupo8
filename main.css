@@ -5,20 +5,26 @@
 }
 
 header {
-
-    background-color: black;
+    background-image: url("./imagenes/cataratas.jpg");
+    background-size: auto;
     color: white;
-    height: 80px;
+    height: 150px;
     margin: 10px;
+
 }
+
 
 img {
     width: 4vw;
     height: auto;
 }
 
+.conteiner {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .nav {
-    display: inline-block;
     background-color: rgb(98, 97, 97);
     color: white;
     border-radius: 5px;
