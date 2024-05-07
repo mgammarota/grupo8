@@ -5,17 +5,25 @@
 }
 
 header {
-    background-image: url("./imagenes/cataratas.jpg");
-    background-size: auto;
+    display: inline-flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    background-color: black;
+    background-size: cover;
     color: white;
-    height: 150px;
-    margin: 10px;
+    height: 100px;
+
 
 }
 
 
 img {
-    width: 4vw;
+    padding-left: 50px;
+    width: 8vw;
     height: auto;
 }
 
@@ -24,16 +32,29 @@ img {
     justify-content: flex-end;
 }
 
-.nav {
+nav ul {
+    list-style: none;
+    /* Quita los puntos de lista */
+    padding: 0;
+    margin: 0;
+}
 
+nav ul li {
+    display: inline;
+    /* Coloca los elementos uno al lado del otro */
+    margin-right: 10px;
+    /* Espacio entre los elementos */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho del último elemento */
+}
+
+nav ul li a {
     color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.5vw;
-    padding: 0.5%;
-    margin: 20px;
-
-
+    font-size: 36px;
+    padding-left: 30px;
 }
 
 footer {
@@ -56,6 +77,7 @@ footer {
 }
 
 #inicio {
+    margin-top: 130px;
     height: 500px;
     background-position: center;
     background-attachment: fixed;
@@ -88,6 +110,7 @@ footer {
 .galeria {
     width: 20vw;
     height: auto;
+    cursor: zoom-in;
 }
 
 .grid-container-galeria {
