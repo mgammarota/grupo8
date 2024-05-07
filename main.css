@@ -85,6 +85,16 @@ footer {
 
 }
 
+.galeria {
+    width: 20vw;
+    height: auto;
+}
+
+.grid-container-galeria {
+
+    grid-template-areas: ;
+}
+
 
 .grid-container3 {
     display: grid;
