@@ -197,8 +197,41 @@ footer {
 }
 
 #carouselExampleIndicators1 {
+    color: whitesmoke;
     background-color: black;
     display: inline-flex;
-    height: auto;
     width: 650px;
+    height: auto;
+}
+
+#carouselExampleIndicators2 {
+    color: whitesmoke;
+    background-color: black;
+    display: inline-flex;
+    width: 650px;
+    height: auto;
+}
+
+#carouselExampleIndicators3 {
+    color: whitesmoke;
+    background-color: black;
+    display: inline-flex;
+    width: 650px;
+    height: auto;
+}
+
+#carouselExampleIndicators4 {
+    color: whitesmoke;
+    background-color: black;
+    display: inline-flex;
+    width: 650px;
+    height: auto;
+}
+
+#carouselExampleIndicators5 {
+    color: whitesmoke;
+    background-color: black;
+    display: inline-flex;
+    width: 650px;
+    height: auto;
 }
