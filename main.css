@@ -1,44 +1,30 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     font-family: "Dancing Script", cursive;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
 }
 
-/* Encabezado */
 header {
-    background-image: url("./imagenes/cataratas.jpg");
+    display: inline-flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    background-color: black;
     background-size: cover;
     color: white;
-    height: 150px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 100px;
+
+
 }
 
-header img {
-    height: 100%;
-}
 
 img {
     padding-left: 50px;
     width: 8vw;
     height: auto;
-    background-image: url("./imagenes/cataratas.jpg");
-    background-size: cover;
-    color: white;
-    height: 150px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header img {
-    height: 100%;
 }
 
 .conteiner {
@@ -46,178 +32,31 @@ header img {
     justify-content: flex-end;
 }
 
-.nav {
+nav ul {
+    list-style: none;
+    /* Quita los puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    /* Coloca los elementos uno al lado del otro */
+    margin-right: 10px;
+    /* Espacio entre los elementos */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho del último elemento */
+}
+
+nav ul li a {
     color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.5vw;
-    padding: 0.5vw;
-    margin: 0 20px;
+    font-size: 36px;
+    padding-left: 30px;
 }
 
-.nav:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Imágenes */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Sección de inicio */
-#inicio {
-    height: 500px;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: whitesmoke;
-    animation: cambio-fondo 40s infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-@keyframes cambio-fondo {
-    0% {
-        background-image: url(./imagenes/Cerro-de-los-Siete-Colores.jpg);
-    }
-    25% {
-        background-image: url(./imagenes/hornocal1jpg.webp);
-    }
-    50% {
-        background-image: url(./imagenes/Cataratas-del-Iguazú.jpg);
-    }
-    100% {
-        background-image: url(./imagenes/cataratas.jpg);
-    }
-}
-
-/* Carrusel */
-.carousel {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 300px; /* Ajusta la altura según sea necesario */
-}
-
-.carousel-inner {
-    display: flex;
-    width: calc(100% * 19); /* 19 es el número de imágenes */
-    animation: scroll 120s linear infinite; /* Ajusta la duración aquí */
-}
-
-.carousel img {
-    width: calc(100% / 19); /* Ajusta según el número de imágenes */
-    height: 100%;
-    object-fit: cover;
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(calc(-100% + 100vw)); /* Ajusta según el número de imágenes */
-    }
-}
-
-/* Contenedor de cuadrícula */
-.grid-container3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.5em;
-    width: 100%;
-    padding: 1em;
-}
-
-/* Elementos de cuadrícula */
-.item {
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-    text-align: center;
-}
-
-.item1 {
-    grid-column: span 2;
-    background-image: url(./imagenes/Cataratas-del-Iguazú.jpg);
-    height: 20vh;
-}
-
-.item2 {
-    grid-row: span 3;
-    background-image: url(./imagenes/Cerro-de-los-Siete-Colores.jpg);
-}
-
-.item3, .item4, .item5, .item6 {
-    height: auto;
-}
-
-/* Sección de contacto */
-#contacto {
-    padding: 2em;
-    background-color: #f4f4f4;
-}
-
-#contacto h2 {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-#contactForm {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1em;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#contactForm div {
-    margin-bottom: 1em;
-}
-
-#contactForm label {
-    display: block;
-    margin-bottom: 0.5em;
-}
-
-#contactForm input[type="text"],
-#contactForm input[type="email"],
-#contactForm input[type="tel"],
-#contactForm select,
-#contactForm textarea {
-    width: 100%;
-    padding: 0.5em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#contactForm input[type="radio"],
-#contactForm input[type="checkbox"] {
-    margin-right: 0.5em;
-}
-
-#contactForm button {
-    padding: 0.75em 1.5em;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contactForm button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
 footer {
     background-color: black;
     color: white;
@@ -229,13 +68,12 @@ footer {
     padding: 20px;
     height: 100px;
     margin-top: 0;
-    height: 50px;
 }
 
 .redsoc {
     color: white;
     font-size: 1.5vw;
-    margin: 0 10px;
+    text-align: center;
 }
 
 #inicio {
@@ -284,7 +122,13 @@ footer {
 .grid-container3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "titulo titulo 7colores"
+        "mision mision 7colores"
+        "vision vision 7colores"
+        "hornocal valores 7colores";
     gap: 0.5em;
     width: 100%;
     height: 100vh;
@@ -292,8 +136,7 @@ footer {
 
 .item1 {
     padding-top: 50px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: titulo;
     background-image: url(./imagenes/Cataratas-del-Iguazú.jpg);
     background-size: cover;
     font-size: 24px;
@@ -304,10 +147,8 @@ footer {
 }
 
 .item2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 8;
+    grid-area: 7colores;
+    grid-row: 1 / span 4;
     background-image: url(./imagenes/Cerro-de-los-Siete-Colores.jpg);
     background-size: cover;
     width: 100%;
@@ -317,8 +158,7 @@ footer {
 .item3 {
     padding-left: 30px;
     font-size: 20px;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-area: mision;
     width: 100%;
     height: auto;
 }
@@ -328,8 +168,7 @@ footer {
     font-size: 20px;
     width: 100%;
     height: auto;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: vision;
 }
 
 .item5 {
@@ -337,17 +176,16 @@ footer {
     font-size: 20px;
     width: 100%;
     height: auto;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-area: valores;
 
 }
 
 .item6 {
+    background-size: center;
     width: 100%;
-    height: 50vh;
+    height: auto;
     background-image: url(./imagenes/hornocal1jpg.webp);
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-area: hornocal;
 }
 
 #carouselExampleIndicators {
