@@ -9,21 +9,19 @@
 
 /* Encabezado */
 header {
-    display: inline-flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 1000;
-    background-color: black;
+    background-image: url("./imagenes/cataratas.jpg");
     background-size: cover;
     color: white;
-    height: 100px;
-
-
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+header img {
+    height: 100%;
+}
 
 img {
     padding-left: 50px;
@@ -48,29 +46,6 @@ header img {
     justify-content: flex-end;
 }
 
-nav ul {
-    list-style: none;
-    /* Quita los puntos de lista */
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    /* Coloca los elementos uno al lado del otro */
-    margin-right: 10px;
-    /* Espacio entre los elementos */
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-    /* Elimina el margen derecho del último elemento */
-}
-
-nav ul li a {
-    color: white;
-    font-size: 36px;
-    padding-left: 30px;
 .nav {
     color: white;
     border-radius: 5px;
