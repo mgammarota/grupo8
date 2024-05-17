@@ -1,307 +1,283 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Dancing Script", cursive;
-}
-
-header {
-    display: inline-flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 1000;
-    background-color: black;
-    background-size: cover;
-    color: white;
-    height: 100px;
-
-
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script";
 }
 
 
-div > img {
-    padding-left: 50px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 0px 30px #000;
+img {
+  padding-left: 50px;
+  width: 8vw;
+  height: auto;
 }
 
-div {
-  display: grid;
-  grid-template-columns:
-    repeat(
-      auto-fit, minmax(150px, 1fr)
-    ) ;
-    gap: 32px;
-}
-
-.conteiner {
-    display: flex;
-    justify-content: flex-end;
+.container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav ul {
-    list-style: none;
-    /* Quita los puntos de lista */
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  /* Quita los puntos de lista */
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    /* Coloca los elementos uno al lado del otro */
-    margin-right: 10px;
-    /* Espacio entre los elementos */
+  display: inline;
+  /* Coloca los elementos uno al lado del otro */
+  margin-right: 10px;
+  /* Espacio entre los elementos */
+}
+
+nav.item {
+  margin-left: 10px;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 nav ul li:last-child {
-    margin-right: 0;
-    /* Elimina el margen derecho del último elemento */
+  margin-right: 0;
+  /* Elimina el margen derecho del último elemento */
 }
 
 nav ul li a {
-    color: white;
-    font-size: 36px;
-    padding-left: 30px;
+  color: white;
+  font-size: 36px;
+  padding-left: 30px;
 }
 
 /* Estilos para el contenedor del mapa */
 .map-container {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 /* Estilos para el título "Nuestra Dirección" */
 .map-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 /* Estilos para el iframe del mapa */
 .map-container iframe {
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 /* Estilos para los detalles de la dirección */
 .map-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .map-details p {
-    font-size: 18px;
-    margin: 5px 0;
-    color: #555;
+  font-size: 18px;
+  margin: 5px 0;
+  color: #555;
 }
 
 
 footer {
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 20px;
-    height: 100px;
-    margin-top: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  height: 100px;
+  margin-top: 0;
 }
 
 .redsoc {
-    color: white;
-    font-size: 1.5vw;
-    text-align: center;
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
 }
 
 /* whatsapp */
 .whatsapp-button {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    background-color: #4cc370;
-    color: #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 60px;
-    box-shadow: 2px 2px 3px #999;
-    text-decoration: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #4cc370;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 60px;
+  box-shadow: 2px 2px 3px #999;
+  text-decoration: none;
 }
 
 .whatsapp-button:hover {
-    background-color: #3d9e5a;
+  background-color: #3d9e5a;
 }
 
 #inicio {
-    margin-top: 130px;
-    height: 500px;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: whitesmoke;
-    animation-name: animacion;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
+  margin-top: 130px;
+  height: 500px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: whitesmoke;
+  animation-name: animacion;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes animacion {
-    0% {
-        background-image: url(./imagenes/Cerro-de-los-Siete-Colores.jpg);
-    }
+  0% {
+      background-image: url(./imagenes/Cerro-de-los-Siete-Colores.jpg);
+  }
 
-    25% {
-        background-image: url(./imagenes/hornocal1jpg.webp);
-    }
+  25% {
+      background-image: url(./imagenes/hornocal1jpg.webp);
+  }
 
-    50% {
-        background-image: url(./imagenes/Cataratas-del-Iguazu.jpg);
-    }
+  50% {
+      background-image: url(./imagenes/Cataratas-del-Iguazu.jpg);
+  }
 
-    100% {
-        background-image: url(./imagenes/cataratas.jpg);
-    }
+  100% {
+      background-image: url(./imagenes/cataratas.jpg);
+  }
 
 }
 
 .galeria {
-    width: 20vw;
-    height: auto;
-    cursor: zoom-in;
+  width: 20vw;
+  height: auto;
+  cursor: zoom-in;
 }
 
 .grid-container-galeria {
 
-    grid-template-areas: ;
+  grid-template-areas: ;
 }
 
 
 .grid-container3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    grid-template-areas:
-        "titulo titulo 7colores"
-        "mision mision 7colores"
-        "vision vision 7colores"
-        "hornocal valores 7colores";
-    gap: 0.5em;
-    width: 100%;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+      "titulo titulo 7colores"
+      "mision mision 7colores"
+      "vision vision 7colores"
+      "hornocal valores 7colores";
+  gap: 0.5em;
+  width: 100%;
+  height: 100vh;
 }
 
 .item1 {
-    padding-top: 50px;
-    grid-area: titulo;
-    background-image: url(./imagenes/Cataratas-del-Iguazú.jpg);
-    background-size: cover;
-    font-size: 24px;
-    text-align: center;
-    color: aliceblue;
-    width: auto;
-    height: 100px;
+  padding-top: 50px;
+  grid-area: titulo;
+  background-image: url(./imagenes/Cataratas-del-Iguazú.jpg);
+  background-size: cover;
+  font-size: 24px;
+  text-align: center;
+  color: aliceblue;
+  width: auto;
+  height: 100px;
 }
 
 .item2 {
-    grid-area: 7colores;
-    grid-row: 1 / span 4;
-    background-image: url(./imagenes/Cerro-de-los-Siete-Colores.jpg);
-    background-size: cover;
-    width: 100%;
-    height: auto;
+  grid-area: 7colores;
+  grid-row: 1 / span 4;
+  background-image: url(./imagenes/Cerro-de-los-Siete-Colores.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
 
 .item3 {
-    padding-left: 30px;
-    font-size: 20px;
-    grid-area: mision;
-    width: 100%;
-    height: auto;
+  padding-left: 30px;
+  font-size: 20px;
+  grid-area: mision;
+  width: 100%;
+  height: auto;
 }
 
 .item4 {
-    padding: 30px;
-    font-size: 20px;
-    width: 100%;
-    height: auto;
-    grid-area: vision;
+  padding: 30px;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  grid-area: vision;
 }
 
 .item5 {
-    padding-left: 200px;
-    font-size: 20px;
-    width: 100%;
-    height: auto;
-    grid-area: valores;
+  padding-left: 200px;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  grid-area: valores;
 
 }
 
 .item6 {
-    background-size: center;
-    width: 100%;
-    height: auto;
-    background-image: url(./imagenes/hornocal1jpg.webp);
-    grid-area: hornocal;
+  background-size: center;
+  width: 100%;
+  height: auto;
+  background-image: url(./imagenes/hornocal1jpg.webp);
+  grid-area: hornocal;
 }
 
 #carouselExampleIndicators {
-    color: whitesmoke;
-    background-color: black;
-    display: inline-flex;
-    width: 650px;
-    height: auto;
+  color: whitesmoke;
+  background-color: black;
+  display: inline-flex;
+  width: 650px;
+  height: auto;
 }
 
 #carouselExampleIndicators1 {
-    color: whitesmoke;
-    background-color: black;
-    display: inline-flex;
-    width: 650px;
-<<<<<<< HEAD
-}
-=======
-    height: auto;
+  color: whitesmoke;
+  background-color: black;
+  display: inline-flex;
+  width: 650px;
+  height: auto;
 }
 
 #carouselExampleIndicators2 {
-    color: whitesmoke;
-    background-color: black;
-    display: inline-flex;
-    width: 650px;
-    height: auto;
+  color: whitesmoke;
+  background-color: black;
+  display: inline-flex;
+  width: 650px;
+  height: auto;
 }
 
 #carouselExampleIndicators3 {
-    color: whitesmoke;
-    background-color: black;
-    display: inline-flex;
-    width: 650px;
-    height: auto;
+  color: whitesmoke;
+  background-color: black;
+  display: inline-flex;
+  width: 650px;
+  height: auto;
 }
 
 #carouselExampleIndicators4 {
-    color: whitesmoke;
-    background-color: black;
-    display: inline-flex;
-    width: 650px;
-    height: auto;
+  color: whitesmoke;
+  background-color: black;
+  display: inline-flex;
+  width: 650px;
+  height: auto;
 }
 
 #carouselExampleIndicators5 {
-    color: whitesmoke;
-    background-color: black;
-    display: inline-flex;
-    width: 650px;
-    height: auto;
+  color: whitesmoke;
+  background-color: black;
+  display: inline-flex;
+  width: 650px;
+  height: auto;
 }
->>>>>>> main
