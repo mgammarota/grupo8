@@ -290,3 +290,29 @@ footer {
     width: 650px;
     height: auto;
 }
+
+#contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "formulario mapa";
+    gap: 0.5em;
+    width: 100%;
+    height: 100vh;
+}
+
+#contactForm {
+    grid-area: formulario;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+    border: black solid;
+    background-color: #999;
+    place-items: center;
+}
+
+.map-container {
+    grid-area: mapa;
+}
