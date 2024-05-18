@@ -235,21 +235,3 @@ footer {
     width: 650px;
     height: auto;
 }
-
-@media (max-width: 600px) {
-    haeder {
-        display: inline-block;
-    }
-
-    footer {
-        display: inline-block;
-    }
-
-    .section {
-        display: inline-block;
-    }
-
-
-
-
-}
