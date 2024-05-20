@@ -4,7 +4,9 @@
   font-family: "Dancing Script";
 }
 
-
+#banner {
+  background-image: url();
+}
 img {
   padding-left: 50px;
   width: 8vw;
@@ -81,7 +83,6 @@ nav ul li a {
   color: #555;
 }
 
-
 footer {
   background-color: black;
   color: white;
@@ -122,8 +123,7 @@ footer {
   background-color: #3d9e5a;
 }
 
-#inicio {
-  margin-top: 130px;
+#banner {
   height: 500px;
   background-position: center;
   background-attachment: fixed;
@@ -158,12 +158,6 @@ footer {
   height: auto;
   cursor: zoom-in;
 }
-
-.grid-container-galeria {
-
-  grid-template-areas: ;
-}
-
 
 .grid-container3 {
   display: grid;
@@ -236,7 +230,6 @@ footer {
 
 #carouselExampleIndicators {
   color: whitesmoke;
-  background-color: black;
   display: inline-flex;
   width: 650px;
   height: auto;
@@ -244,7 +237,6 @@ footer {
 
 #carouselExampleIndicators1 {
   color: whitesmoke;
-  background-color: black;
   display: inline-flex;
   width: 650px;
   height: auto;
@@ -252,7 +244,6 @@ footer {
 
 #carouselExampleIndicators2 {
   color: whitesmoke;
-  background-color: black;
   display: inline-flex;
   width: 650px;
   height: auto;
@@ -260,7 +251,6 @@ footer {
 
 #carouselExampleIndicators3 {
   color: whitesmoke;
-  background-color: black;
   display: inline-flex;
   width: 650px;
   height: auto;
@@ -268,51 +258,41 @@ footer {
 
 #carouselExampleIndicators4 {
   color: whitesmoke;
-  background-color: black;
   display: inline-flex;
   width: 650px;
   height: auto;
 }
 
 #carouselExampleIndicators5 {
-<<<<<<< HEAD
   color: whitesmoke;
-  background-color: black;
   display: inline-flex;
   width: 650px;
   height: auto;
 }
-=======
-    color: whitesmoke;
-    background-color: black;
-    display: inline-flex;
-    width: 650px;
-    height: auto;
-}
 
 #contacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "formulario mapa";
-    gap: 0.5em;
-    width: 100%;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+      "formulario mapa";
+  gap: 0.5em;
+  width: 100%;
+  height: 100vh;
 }
 
 #contactForm {
-    grid-area: formulario;
-    margin: 20px;
-    padding: 20px;
-    width: 300px;
-    height: 350px;
-    border: black solid;
-    background-color: #999;
-    place-items: center;
+  grid-area: formulario;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f3f4f8;
+  place-items: center;
 }
 
 .map-container {
     grid-area: mapa;
 }
->>>>>>> main
