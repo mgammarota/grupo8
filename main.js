@@ -21,45 +21,45 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email');
         const telefono = document.getElementById('telefono');
         const asunto = document.getElementById('asunto');
-        const genero = document.querySelector('input[name="genero"]:checked');
         const mensaje = document.getElementById('mensaje');
         const terminos = document.getElementById('terminos');
 
+        // Validar nombre
         if (!nombre.value.trim()) {
             alert('Por favor, ingrese su nombre.');
             nombre.focus();
             return;
         }
 
+        // Validar correo electrónico
         if (!email.value.trim()) {
             alert('Por favor, ingrese su correo electrónico.');
             email.focus();
             return;
         }
 
+        // Validar teléfono
         if (!telefono.value.trim()) {
             alert('Por favor, ingrese su teléfono.');
             telefono.focus();
             return;
         }
 
+        // Validar asunto
         if (!asunto.value) {
             alert('Por favor, seleccione un asunto.');
             asunto.focus();
             return;
         }
 
-        if (!genero) {
-            alert('Por favor, seleccione su género.');
-            return;
-        }
-
+        // Validar mensaje
         if (!mensaje.value.trim()) {
             alert('Por favor, ingrese su mensaje.');
             mensaje.focus();
             return;
         }
 
+        // Validar términos y condiciones
         if (!terminos.checked) {
             alert('Por favor, acepte los términos y condiciones.');
             terminos.focus();
