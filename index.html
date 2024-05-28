@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Grupo 8</title>
-    <meta name="description" content="Servicio de calidad para mejorar tus mejores momentos">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 8</title>
     <link rel="shortcut icon" href="./imagenes/icono.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
@@ -12,172 +11,151 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c0769ee642.js" crossorigin="anonymous"></script>
   </head>
 
-<body>
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <img src="./imagenes/logo.png" alt="#" width="28" height="22" class="d-inline-block align-text-top">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="#" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <img src="./imagenes/logo.png" alt="logo">
+        <nav class="conteiner">
+          <ul class="nav">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
       </nav>
     </header>
 
-    <div id="banner">
-      <section id="banner" class="section">
-        <h1>Fotografos Profesionales en CABA</h1><br>
-        <h3>Profesionalismo, Cumplimiento, Puntualidad y Garantia de confianza</h3><br>
-      </section>
-    </div>
+    <section id="inicio" class="section">
+      <h1>Fotografos Profesionales en CABA</h1><br>
+      <h3>Profesionalismo, Cumplimiento, Puntualidad y Garantia de confianza</h3><br>
+    </section>
 
-    <div class="container">
-      <section id="galeria" class="section">
-        <div class="col-sm-6" >
-
-
-          <div class="grid-container-galeria">
-            <h2>Viaje por Argentina</h2><br>
+    <section id="galeria" class="section container">
+      <div class="grid-container-galeria ">
+        <h2>Viaje por Argentina</h2><br>
+        <div class="row">
+          <div class="col-6">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <h3>Norte Argentino</h3>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                <a href="./imagenes/Cerro-de-los-Siete-Colores.jpg" target="_blank">
+                <img src="/imagenes/Cerro-de-los-Siete-Colores.jpg" class="d-block w-100" alt="7colores">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./imagenes/hornocal1jpg.webp" target="_blank">
+                <img src="./imagenes/hornocal1jpg.webp" class="d-block w-100" alt="hornocal">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./imagenes/salina.webp" target="_blank">
+                <img src="./imagenes/salina.webp" class="d-block w-100" alt="salina">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./imagenes/talampaya.webp" target="_blank">
+                <img src="./imagenes/talampaya.webp" class="d-block w-100" alt="talampaya">
+                </a>
+              </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
-
-            <div class="container">
-              <div class="row justify-content-center">
-
-                  <div id="carouselExampleIndicators" class="carousel slide">
-                      <h3>Norte Argentino</h3>
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <a href="./imagenes/Cerro-de-los-Siete-Colores.jpg" target="_blank">
-                              <img src="/imagenes/Cerro-de-los-Siete-Colores.jpg" class="d-block w-100" alt="7colores">
-                          </a>
-                        </div>
-                        <div class="carousel-item">
-                          <a href="./imagenes/hornocal1jpg.webp" target="_blank">
-                              <img src="./imagenes/hornocal1jpg.webp" class="d-block w-100" alt="hornocal">
-                          </a>
-                        </div>
-                        <div class="carousel-item">
-                          <a href="./imagenes/salina.webp" target="_blank">
-                              <img src="./imagenes/salina.webp" class="d-block w-100" alt="salina">
-                          </a>
-                        </div>
-                        <div class="carousel-item">
-                          <a href="./imagenes/talampaya.webp" target="_blank">
-                              <img src="./imagenes/talampaya.webp" class="d-block w-100" alt="talampaya">
-                          </a>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
+          <div class="col-6">
+            <div id="carouselExampleIndicators1" class="carousel slide">
+              <h3>Patagonia</h3>
+              <div class="carousel-indicators1">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="./imagenes/ballena.jpg" target="_blank">
+                  <img src="/imagenes/ballena.jpg" class="d-block w-100" alt="ballena">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./imagenes/cueva.jpg" target="_blank">
+                  <img src="./imagenes/cueva.jpg" class="d-block w-100" alt="cueva">
+                  </a>
+                </div>
+                  <div class="carousel-item">
+                  <a href="./imagenes/glaciar.jpg" target="_blank">
+                  <img src="./imagenes/glaciar.jpg" class="d-block w-100" alt="glaciar">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./imagenes/lago.jpg" target="_blank">
+                  <img src="./imagenes/lago.jpg" class="d-block w-100" alt="lago">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./imagenes/lobos-marinos.jpg" target="_blank">
+                  <img src="./imagenes/lobos-marinos.jpg" class="d-block w-100" alt="lobos-marinos">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./imagenes/mountain.jpg" target="_blank">
+                  <img src="./imagenes/mountain.jpg" class="d-block w-100" alt="mountain">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./imagenes/nevada.jpg" target="_blank">
+                  <img src="./imagenes/nevada.jpg" class="d-block w-100" alt="nevada">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./imagenes/perito-moreno.webp" target="_blank">
+                  <img src="./imagenes/perito-moreno.webp" class="d-block w-100" alt="perito-moreno">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./imagenes/perito-moreno-2.webp" target="_blank">
+                  <img src="./imagenes/perito-moreno-2.webp" class="d-block w-100" alt="perito-moreno-2">
+                  </a>
                 </div>
               </div>
 
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+              </div>
+            </div>
+          </div>
 
-              <div id="carouselExampleIndicators1" class="carousel slide">
-                  <h3>Patagonia</h3>
-                  <div class="carousel-indicators1">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a href="./imagenes/ballena.jpg" target="_blank">
-                          <img src="/imagenes/ballena.jpg" class="d-block w-100" alt="ballena">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="./imagenes/cueva.jpg" target="_blank">
-                          <img src="./imagenes/cueva.jpg" class="d-block w-100" alt="cueva">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="./imagenes/glaciar.jpg" target="_blank">
-                          <img src="./imagenes/glaciar.jpg" class="d-block w-100" alt="glaciar">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="./imagenes/lago.jpg" target="_blank">
-                          <img src="./imagenes/lago.jpg" class="d-block w-100" alt="lago">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="./imagenes/lobos-marinos.jpg" target="_blank">
-                          <img src="./imagenes/lobos-marinos.jpg" class="d-block w-100" alt="lobos-marinos">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="./imagenes/mountain.jpg" target="_blank">
-                          <img src="./imagenes/mountain.jpg" class="d-block w-100" alt="mountain">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="./imagenes/nevada.jpg" target="_blank">
-                          <img src="./imagenes/nevada.jpg" class="d-block w-100" alt="nevada">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="./imagenes/perito-moreno.webp" target="_blank">
-                          <img src="./imagenes/perito-moreno.webp" class="d-block w-100" alt="perito-moreno">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="./imagenes/perito-moreno-2.webp" target="_blank">
-                          <img src="./imagenes/perito-moreno-2.webp" class="d-block w-100" alt="perito-moreno-2">
-                      </a>
-                    </div>
-                  </div>
-
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-
+          <div class="row mt-3">
+            <div class="col-6">
               <div id="carouselExampleIndicators2" class="carousel slide">
                 <h3>Buenos Aires</h3>
                 <div class="carousel-indicators">
@@ -188,39 +166,38 @@
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
-
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <a href="./imagenes/puente-mujer.jpg" target="_blank">
-                        <img src="/imagenes/puente-mujer.jpg" class="d-block w-100" alt="puente-mujer">
+                    <img src="/imagenes/puente-mujer.jpg" class="d-block w-100" alt="puente-mujer">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/caba.webp" target="_blank">
-                        <img src="./imagenes/caba.webp" class="d-block w-100" alt="caba">
+                    <img src="./imagenes/caba.webp" class="d-block w-100" alt="caba">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/caba1.webp" target="_blank">
-                        <img src="./imagenes/caba1.webp" class="d-block w-100" alt="caba1">
+                    <img src="./imagenes/caba1.webp" class="d-block w-100" alt="caba1">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/caba2.webp" target="_blank">
-                        <img src="./imagenes/caba2.webp" class="d-block w-100" alt="caba2">
+                    <img src="./imagenes/caba2.webp" class="d-block w-100" alt="caba2">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/mdq.webp" target="_blank">
-                        <img src="./imagenes/mdq.webp" class="d-block w-100" alt="mdq">
+                    <img src="./imagenes/mdq.webp" class="d-block w-100" alt="mdq">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/mdq1.webp" target="_blank">
-                        <img src="./imagenes/mdq1.webp" class="d-block w-100" alt="mdq1">
+                    <img src="./imagenes/mdq1.webp" class="d-block w-100" alt="mdq1">
                     </a>
+                  </div>
                 </div>
-
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -230,7 +207,9 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+            </div>
 
+            <div class="col-6">
               <div id="carouselExampleIndicators3" class="carousel slide">
                 <h3>Cordoba</h3>
                 <div class="carousel-indicators">
@@ -242,22 +221,22 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <a href="./imagenes/cordoba.webp" target="_blank">
-                        <img src="/imagenes/cordoba.webp" class="d-block w-100" alt="cordoba">
+                    <img src="/imagenes/cordoba.webp" class="d-block w-100" alt="cordoba">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/cordoba-2.jpg" target="_blank">
-                        <img src="./imagenes/cordoba-2.jpg" class="d-block w-100" alt="cordoba-2">
+                    <img src="./imagenes/cordoba-2.jpg" class="d-block w-100" alt="cordoba-2">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/cordoba-3.jpg" target="_blank">
-                        <img src="./imagenes/cordoba-3.jpg" class="d-block w-100" alt="cordoba-3">
+                    <img src="./imagenes/cordoba-3.jpg" class="d-block w-100" alt="cordoba-3">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/calamuchita.jpg" target="_blank">
-                        <img src="./imagenes/calamuchita.jpg" class="d-block w-100" alt="calamuchita">
+                    <img src="./imagenes/calamuchita.jpg" class="d-block w-100" alt="calamuchita">
                     </a>
                   </div>
                 </div>
@@ -270,7 +249,11 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+            </div>
+          </div>
 
+          <div class="row mt-3">
+            <div class="col-6">
               <div id="carouselExampleIndicators4" class="carousel slide">
                 <h3>Mesopotamia</h3>
                 <div class="carousel-indicators">
@@ -283,27 +266,27 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <a href="./imagenes/cataratas.jpg" target="_blank">
-                        <img src="/imagenes/cataratas.jpg" class="d-block w-100" alt="Cataratas">
+                    <img src="/imagenes/cataratas.jpg" class="d-block w-100" alt="Cataratas">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/Cataratas-del-Iguazu.jpg" target="_blank">
-                        <img src="./imagenes/Cataratas-del-Iguazu.jpg" class="d-block w-100" alt="Cataratas-del-Iguazu">
+                    <img src="./imagenes/Cataratas-del-Iguazu.jpg" class="d-block w-100" alt="Cataratas-del-Iguazu">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/ibera-yacare.webp" target="_blank">
-                        <img src="./imagenes/ibera-yacare.webp" class="d-block w-100" alt="yacare">
+                    <img src="./imagenes/ibera-yacare.webp" class="d-block w-100" alt="yacare">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/ibera-yagua.webp" target="_blank">
-                        <img src="./imagenes/ibera-yagua.webp" class="d-block w-100" alt="yaguarete">
+                    <img src="./imagenes/ibera-yagua.webp" class="d-block w-100" alt="yaguarete">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/esteros.webp" target="_blank">
-                        <img src="./imagenes/esteros.webp" class="d-block w-100" alt="esteros">
+                    <img src="./imagenes/esteros.webp" class="d-block w-100" alt="esteros">
                     </a>
                   </div>
                 </div>
@@ -316,7 +299,8 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-
+            </div>
+            <div class="col-6">
               <div id="carouselExampleIndicators5" class="carousel slide">
                 <h3>Cuyo</h3>
                 <div class="carousel-indicators">
@@ -330,32 +314,32 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <a href="./imagenes/aconcagua.webp" target="_blank">
-                        <img src="/imagenes/aconcagua.webp" class="d-block w-100" alt="aconcagua">
+                    <img src="/imagenes/aconcagua.webp" class="d-block w-100" alt="aconcagua">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/vinos.jpg" target="_blank">
-                        <img src="./imagenes/vinos.jpg" class="d-block w-100" alt="vinos">
+                    <img src="./imagenes/vinos.jpg" class="d-block w-100" alt="vinos">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/caballos.jpg" target="_blank">
-                        <img src="./imagenes/caballos.jpg" class="d-block w-100" alt="caballos">
+                    <img src="./imagenes/caballos.jpg" class="d-block w-100" alt="caballos">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/la-payunia..webp" target="_blank">
-                        <img src="./imagenes/la-payunia..webp" class="d-block w-100" alt="la-payunia">
+                    <img src="./imagenes/la-payunia..webp" class="d-block w-100" alt="la-payunia">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/lugares-turi-sticos-de-mendoza-jpg..webp" target="_blank">
-                        <img src="./imagenes/lugares-turi-sticos-de-mendoza-jpg..webp" class="d-block w-100" alt="mendoza">
+                    <img src="./imagenes/lugares-turi-sticos-de-mendoza-jpg..webp" class="d-block w-100" alt="mendoza">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="./imagenes/mountain-pink.jpg" target="_blank">
-                        <img src="./imagenes/mountain-pink.jpg" class="d-block w-100" alt="mountain-pink">
+                    <img src="./imagenes/mountain-pink.jpg" class="d-block w-100" alt="mountain-pink">
                     </a>
                   </div>
                 </div>
@@ -369,129 +353,119 @@
                 </button>
               </div>
             </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="container">
-      <section id="nosotros" class="section">
-        <div class="grid-container3">
-          <div class="container">
-            <div class="item item1">
-                <h1>Tu satisfacción es nuestra prioridad</h1>
-            </div>
-          </div>
-
-          <div>
-            <div class="item item2">
-                <p></p>
-            </div>
-          </div>
-
-          <div>
-            <div class="item item3">
-                <h3>Nuestra Mision</h3><br>
-                <p>Llegar a ser una empresa líder y referente en la Argentina,
-                    produciendo y entregando imágenes de alta competitividad.
-                </p>
-                <br>
-            </div>
-          </div>
-
-          <div class="">
-            <div class="item item4">
-                <h3>Vision</h3>
-                <p>
-                  Ser una empresa líder en la fotografía de la región de CABA lográndonos
-                  posicionar y seguir expandiéndonos como empresa.
-                </p>
-            </div>
-          </div>
-
-          <div class="">
-            <div class="item item5">
-                <h3>Valores</h3>
-                <ul>
-                  <li>Honestidad</li>
-                  <li>Seriedad</li>
-                  <li>Cumplimiento</li>
-                  <li>Originalidad</li>
-                  <li>Dedicacion</li>
-                  <li>Compromiso</li>
-                  <li>Entrega</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <form id="contactForm">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>
-            <div>
-                <label for="asunto">Asunto:</label>
-                <select id="asunto" name="asunto" required>
-                    <option value="">Seleccione...</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="reclamo">Reclamo</option>
-                    <option value="sugerencia">Sugerencia</option>
-                </select>
-            </div>
-            <div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            </div>
-            <div>
-                <input type="checkbox" id="terminos" name="terminos" required>
-                <label for="terminos">Acepto los términos y condiciones</label>
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </section>
-      <div>
-        <div class="map-container">
-          <h2>Nuestra Dirección</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0189106928195!2d-58.39735773035981!3d-34.60224869442734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaead199aae3%3A0xf603e2fbadbd59ce!2sTucum%C3%A1n%202080%2C%20C1050AAP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715868989542!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="map-details">
-              <p>Fotos Profesionales</p>
-              <p>Tucumán 2080</p>
-              <p>CABA</p>
-              <p>Buenos Aires</p>
-              <p>Argentina</p>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="nosotros" class="section container">
+      <div class="">
+
+        <div class="item item1">
+          <h1>Tu satisfacción es nuestra prioridad</h1>
+        </div>
+        <div class="item item2">
+          <p></p>
+        </div>
+
+        <div class="item item3">
+          <h3>Nuestra Mision</h3><br>
+          <p>Llegar a ser una empresa líder y referente en la Argentina,
+          produciendo y entregando imágenes de alta competitividad.
+          </p><br>
+        </div>
+
+        <div class="item item4">
+          <h3>Vision</h3>
+          <p>
+          Ser una empresa líder en la fotografía de la región de CABA lográndonos
+          posicionar y seguir expandiéndonos como empresa.
+          </p>
+        </div>
+
+        <div class="item item6"></div>
+
+        <div class="item item5">
+          <h3>Valores</h3><br>
+          <ul>
+            <li>Honestidad</li>
+            <li>Seriedad</li>
+            <li>Cumplimiento</li>
+            <li>Originalidad</li>
+            <li>Dedicacion</li>
+            <li>Compromiso</li>
+            <li>Entrega</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section container">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div>
+          <label for="asunto">Asunto:</label>
+          <select id="asunto" name="asunto" required>
+            <option value="">Seleccione...</option>
+            <option value="consulta">Consulta</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="sugerencia">Sugerencia</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <div>
+          <input type="checkbox" id="terminos" name="terminos" required>
+          <label for="terminos">Acepto los términos y condiciones</label>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+
+      <div class="map-container">
+        <h2>Nuestra Dirección</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0189106928195!2d-58.39735773035981!3d-34.60224869442734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaead199aae3%3A0xf603e2fbadbd59ce!2sTucum%C3%A1n%202080%2C%20C1050AAP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715868989542!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-details">
+          <p>Fotos Profesionales</p>
+          <p>Tucumán 2080</p>
+          <p>CABA</p>
+          <p>Buenos Aires</p>
+          <p>Argentina</p>
+        </div>
+      </div>
+    </section>
 
     <footer>
-        <a class="redsoc" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a class="redsoc" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a class="redsoc" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <br>
-        <p>Derechos reservados 2024</p>
+      <a class="redsoc" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a class="redsoc" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a class="redsoc" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <br>
+      <p>Derechos reservados 2024</p>
     </footer>
 
     <a href="https://api.whatsapp.com/send?phone=54222222&text=Este%20es%20un%20texto%20de%20ejemplo"
-        class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+  </body>
 </html>
 <!--end of file-->
